@@ -1,7 +1,21 @@
+cat > .gitignore <<'EOF'
 node_modules/
+dist/
+
 .env
-.env.*
+.env.local
+.env.devnet
+.env.mainnet
 .token.json
-runs/*-*-*.json
+
+fixtures/
+fixtures-devnet/
+
+runs/
+
 dashboard/node_modules/
 dashboard/dist/
+
+pundit-audio/
+*.log
+EOF
