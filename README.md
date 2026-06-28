@@ -95,8 +95,8 @@ See [`TECHNICAL.md`](./TECHNICAL.md) for full detail.
 
 ## Links
 
-- **Demo video:** [link]
-- **Live dashboard:** [link]
+- **Demo video:** https://youtu.be/ObY8dPXvroA
+- **Live dashboard:** https://txline-mm.vercel.app/
 - **Technical docs:** [`TECHNICAL.md`](./TECHNICAL.md)
 
 ## A note on rigor
