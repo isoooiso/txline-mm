@@ -1,0 +1,37 @@
+{
+  "name": "txline-mm",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "In-play market maker on the TxLINE consensus feed (World Cup 2026)",
+  "scripts": {
+    "bootstrap": "tsx src/scripts/00-bootstrap.ts",
+    "fixtures": "tsx src/scripts/01-find-fixtures.ts",
+    "replay": "tsx src/scripts/02-replay-smoke.ts",
+    "live": "tsx src/scripts/03-live-smoke.ts",
+    "capture": "tsx src/scripts/04-capture-inventory.ts --",
+    "quote-smoke": "tsx src/scripts/06-quote-smoke.ts",
+    "run": "tsx src/scripts/07-run.ts --",
+    "cross-match": "tsx src/scripts/08-cross-match.ts --",
+    "scores-probe": "tsx src/scripts/09-scores-probe.ts --",
+    "shapes": "tsx src/scripts/05-shapes.ts",
+    "dashboard": "npm run dev --prefix dashboard",
+    "dashboard:build": "npm run build --prefix dashboard"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.7.9",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

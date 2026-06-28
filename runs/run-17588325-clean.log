@@ -1,0 +1,33 @@
+
+> txline-mm@0.1.0 run
+> tsx src/scripts/07-run.ts -- 17588325 --seeds 100 --quote-latency 1000
+
+Sweep fixture 17588325: 100 seeds, quoteLatencyMs=1000
+
+=== Settlement check (Stats keys 1/2) ===
+Final: 1-3
+1X2 winner: part2
+O/U 1.5: over
+O/U 2.5: over
+
+=== Aggregate (protection OFF vs ON) ===
+realizedPnl        OFF mean=5.896 [p5=2.462, p50=5.977, p95=9.677]  |  ON mean=5.330 [p5=2.648, p50=5.195, p95=8.799]
+spreadCaptured     OFF mean=6.234 [p5=5.693, p50=6.221, p95=6.828]  |  ON mean=5.385 [p5=4.934, p50=5.428, p95=5.845]
+inventoryPnl       OFF mean=-0.338 [p5=-3.363, p50=-0.249, p95=2.934]  |  ON mean=-0.054 [p5=-3.037, p50=-0.182, p95=3.303]
+maxExposure        OFF mean=9.052 [p5=3.780, p50=8.796, p95=16.386]  |  ON mean=8.487 [p5=3.552, p50=8.133, p95=14.207]
+protectEvents      OFF mean=0.000 [p5=0.000, p50=0.000, p95=0.000]  |  ON mean=27.000 [p5=27.000, p50=27.000, p95=27.000]
+fills              OFF mean=335.240 [p5=300.950, p50=334.500, p95=364.050]  |  ON mean=292.080 [p5=265.000, p50=293.500, p95=317.000]
+
+=== Delta summary (ON − OFF, paired per seed) ===
+mean ΔrealizedPnl=-0.5657  Δinv=0.2838  Δexposure=-0.5649
+ΔrealizedPnl dist: mean=-0.566 [p5=-1.953, p50=-0.707, p95=0.722]  |  protection wins: 20.0%
+spreadCaptured mean diff (ON−OFF): -0.8495 (≈0 ⇒ protection doesn't cost spread)
+
+=== Left tail ===
+worst realizedPnl  OFF=-0.4479  ON=-0.2967  (higher is better)
+maxExposure p95    OFF=16.3860  ON=14.2067  (lower is better)
+
+=== Read ===
+Protection value shows up in inventoryPnl (adverse-selection channel) more than headline spread.
+
+Saved: runs/aggregate-17588325.json (+ representative per-seed runs for seeds[0] and seeds[-1])

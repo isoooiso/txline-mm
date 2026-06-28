@@ -1,0 +1,18 @@
+
+> txline-mm@0.1.0 capture
+> tsx src/scripts/04-capture-inventory.ts -- 18167317
+
+
+=== RAW OddsPayload[0] ===
+undefined
+
+=== RAW ScorePayload[0] ===
+undefined
+
+=== FINAL ScorePayload (result repr) ===
+undefined
+
+=== DISTINCT MARKETS  (SuperOddsType | Period | Params | PriceNames | InRunning : count) ===
+
+=== COUNTS ===
+odds=0  scores=0  ->  fixtures/18167317.json

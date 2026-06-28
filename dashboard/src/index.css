@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0c;
+}
+
+code {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: #2dd4bf;
+}

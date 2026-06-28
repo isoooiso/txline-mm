@@ -1,0 +1,273 @@
+
+> txline-mm@0.1.0 capture
+> tsx src/scripts/04-capture-inventory.ts -- 17588325
+
+
+=== RAW OddsPayload[0] ===
+{
+  "FixtureId": 17588325,
+  "MessageId": "1835388008:00003:000782-10021-stab",
+  "Ts": 1782611401641,
+  "Bookmaker": "TXLineStablePriceDemargined",
+  "BookmakerId": 10021,
+  "SuperOddsType": "OVERUNDER_PARTICIPANT_GOALS",
+  "GameState": null,
+  "InRunning": false,
+  "MarketParameters": "line=2.75",
+  "MarketPeriod": null,
+  "PriceNames": [
+    "over",
+    "under"
+  ],
+  "Prices": [
+    1752,
+    2330
+  ],
+  "Pct": [
+    "NA",
+    "NA"
+  ]
+}
+
+=== RAW ScorePayload[0] ===
+{
+  "FixtureId": 17588325,
+  "GameState": "scheduled",
+  "StartTime": 1782612000000,
+  "IsTeam": true,
+  "FixtureGroupId": 10115674,
+  "CompetitionId": 72,
+  "CountryId": 466,
+  "SportId": 1,
+  "Participant1IsHome": true,
+  "Participant2Id": 1489,
+  "Participant1Id": 1149,
+  "CoverageSecondaryData": true,
+  "CoverageType": "TV/Stream",
+  "Action": "connected",
+  "Id": 2,
+  "Ts": 1782610434828,
+  "ConnectionId": 661,
+  "Seq": 2,
+  "Confirmed": true,
+  "Stats": {}
+}
+
+=== FINAL ScorePayload (result repr) ===
+{
+  "FixtureId": 17588325,
+  "GameState": "scheduled",
+  "StartTime": 1782612000000,
+  "IsTeam": true,
+  "FixtureGroupId": 10115674,
+  "CompetitionId": 72,
+  "CountryId": 466,
+  "SportId": 1,
+  "Participant1IsHome": true,
+  "Participant2Id": 1489,
+  "Participant1Id": 1149,
+  "CoverageSecondaryData": true,
+  "CoverageType": "TV/Stream",
+  "Action": "game_finalised",
+  "Id": 877,
+  "Ts": 1782619433179,
+  "ConnectionId": 670,
+  "Seq": 980,
+  "Score": {
+    "Participant1": {
+      "H1": {
+        "YellowCards": 1,
+        "Corners": 1
+      },
+      "HT": {
+        "YellowCards": 1,
+        "Corners": 1
+      },
+      "H2": {
+        "Goals": 1,
+        "YellowCards": 2,
+        "Corners": 1
+      },
+      "Total": {
+        "Goals": 1,
+        "YellowCards": 3,
+        "Corners": 2
+      }
+    },
+    "Participant2": {
+      "H1": {
+        "Goals": 2,
+        "Corners": 2
+      },
+      "HT": {
+        "Goals": 2,
+        "Corners": 2
+      },
+      "H2": {
+        "Goals": 1,
+        "Corners": 4
+      },
+      "Total": {
+        "Goals": 3,
+        "Corners": 6
+      }
+    }
+  },
+  "Stats": {
+    "1": 1,
+    "2": 3,
+    "3": 2,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 2,
+    "8": 6,
+    "1001": 0,
+    "1002": 2,
+    "1003": 1,
+    "1004": 0,
+    "1005": 0,
+    "1006": 0,
+    "1007": 1,
+    "1008": 2,
+    "2001": 0,
+    "2002": 2,
+    "2003": 1,
+    "2004": 0,
+    "2005": 0,
+    "2006": 0,
+    "2007": 1,
+    "2008": 2,
+    "3001": 1,
+    "3002": 1,
+    "3003": 1,
+    "3004": 0,
+    "3005": 0,
+    "3006": 0,
+    "3007": 1,
+    "3008": 4,
+    "4001": 0,
+    "4002": 0,
+    "4003": 0,
+    "4004": 0,
+    "4005": 0,
+    "4006": 0,
+    "4007": 0,
+    "4008": 0,
+    "5001": 0,
+    "5002": 0,
+    "5003": 0,
+    "5004": 0,
+    "5005": 0,
+    "5006": 0,
+    "5007": 0,
+    "5008": 0,
+    "6001": 0,
+    "6002": 0,
+    "6003": 0,
+    "6004": 0,
+    "6005": 0,
+    "6006": 0,
+    "6007": 0,
+    "6008": 0,
+    "7001": 0,
+    "7002": 0,
+    "7003": 0,
+    "7004": 0,
+    "7005": 0,
+    "7006": 0,
+    "7007": 0,
+    "7008": 0
+  }
+}
+
+=== DISTINCT MARKETS  (SuperOddsType | Period | Params | PriceNames | InRunning : count) ===
+ 1716  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=4  ::  over|under  ::  true
+ 1712  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=4.5  ::  over|under  ::  true
+ 1702  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=1  ::  part1|part2  ::  true
+ 1668  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=1.25  ::  part1|part2  ::  true
+ 1610  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=0.75  ::  part1|part2  ::  true
+ 1578  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=1.5  ::  part1|part2  ::  true
+ 1455  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=3.5  ::  over|under  ::  true
+ 1328  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=1.75  ::  part1|part2  ::  true
+ 1165  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=3.75  ::  over|under  ::  true
+ 1108  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=0.25  ::  part1|part2  ::  true
+ 1010  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=4.25  ::  over|under  ::  true
+  976  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=0.5  ::  part1|part2  ::  true
+  968  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=0.5  ::  part1|part2  ::  true
+  905  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=3  ::  over|under  ::  true
+  869  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=3.25  ::  over|under  ::  true
+  834  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=4.75  ::  over|under  ::  true
+  772  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=0.25  ::  part1|part2  ::  true
+  764  1X2_PARTICIPANT_RESULT  ::    ::    ::  part1|draw|part2  ::  true
+  698  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=0.75  ::  part1|part2  ::  true
+  678  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=2.5  ::  over|under  ::  true
+  638  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=2.5  ::  over|under  ::  true
+  590  1X2_PARTICIPANT_RESULT  ::  half=1  ::    ::  part1|draw|part2  ::  true
+  585  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=1.5  ::  over|under  ::  true
+  584  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=2  ::  part1|part2  ::  true
+  531  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=2.75  ::  over|under  ::  true
+  429  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=1  ::  over|under  ::  true
+  392  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=0.75  ::  over|under  ::  true
+  389  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=0.5  ::  over|under  ::  true
+  387  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=5  ::  over|under  ::  true
+  382  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=2.75  ::  over|under  ::  true
+  380  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=1.75  ::  over|under  ::  true
+  374  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=5.5  ::  over|under  ::  true
+  338  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=2.25  ::  part1|part2  ::  true
+  288  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=1.25  ::  over|under  ::  true
+  274  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=2.25  ::  over|under  ::  true
+  245  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=1  ::  part1|part2  ::  true
+  223  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=2  ::  over|under  ::  true
+  182  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=2  ::  over|under  ::  true
+  173  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=2.5  ::  part1|part2  ::  true
+  155  1X2_PARTICIPANT_RESULT  ::  half=1  ::    ::  part1|draw|part2  ::  false
+  138  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=1  ::  over|under  ::  false
+  133  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=1.25  ::  over|under  ::  false
+  129  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=1.5  ::  over|under  ::  false
+  115  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=0.75  ::  over|under  ::  false
+  110  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=1  ::  part1|part2  ::  false
+  109  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=1.25  ::  part1|part2  ::  false
+  106  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=3  ::  over|under  ::  false
+  103  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=0.75  ::  part1|part2  ::  false
+   99  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=0.5  ::  over|under  ::  false
+   98  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=0.5  ::  part1|part2  ::  false
+   83  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=0.25  ::  part1|part2  ::  false
+   81  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=1.5  ::  over|under  ::  true
+   78  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=3.5  ::  over|under  ::  false
+   76  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=2.5  ::  over|under  ::  false
+   75  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=2.75  ::  over|under  ::  false
+   75  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=3.25  ::  over|under  ::  false
+   74  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=4  ::  over|under  ::  false
+   71  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=2.25  ::  part1|part2  ::  false
+   64  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=2  ::  part1|part2  ::  false
+   63  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=2.75  ::  part1|part2  ::  false
+   62  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=2.25  ::  over|under  ::  false
+   62  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=2  ::  over|under  ::  false
+   61  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=3.75  ::  over|under  ::  false
+   59  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=3  ::  part1|part2  ::  false
+   59  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=1.5  ::  part1|part2  ::  false
+   58  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=1.25  ::  part1|part2  ::  false
+   55  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=1.75  ::  part1|part2  ::  false
+   55  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=2.5  ::  part1|part2  ::  false
+   54  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=1.75  ::  over|under  ::  true
+   51  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=3.25  ::  part1|part2  ::  false
+   46  1X2_PARTICIPANT_RESULT  ::    ::    ::  part1|draw|part2  ::  false
+   35  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=1.25  ::  part1|part2  ::  true
+   32  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=6.5  ::  over|under  ::  true
+   31  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=3.5  ::  over|under  ::  true
+   30  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=1.75  ::  over|under  ::  false
+   26  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=2.75  ::  part1|part2  ::  true
+   19  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=2  ::  over|under  ::  false
+   19  ASIANHANDICAP_PARTICIPANT_GOALS  ::    ::  line=0  ::  part1|part2  ::  true
+   13  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=5.5  ::  over|under  ::  false
+   13  ASIANHANDICAP_PARTICIPANT_GOALS  ::  half=1  ::  line=0  ::  part1|part2  ::  true
+   12  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=1.5  ::  over|under  ::  false
+   11  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=4.5  ::  over|under  ::  false
+   10  OVERUNDER_PARTICIPANT_GOALS  ::  half=1  ::  line=2.5  ::  over|under  ::  false
+    5  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=0.5  ::  over|under  ::  false
+    4  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=5.25  ::  over|under  ::  true
+    2  OVERUNDER_PARTICIPANT_GOALS  ::    ::  line=0.5  ::  over|under  ::  true
+
+=== COUNTS ===
+odds=33819  scores=979  ->  fixtures/17588325.json

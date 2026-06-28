@@ -1,0 +1,43 @@
+
+> txline-mm@0.1.0 scores-probe
+> tsx src/scripts/09-scores-probe.ts -- 17588326
+
+
+=== FIXTURE META ===
+{
+  FixtureId: 17588326,
+  StartTime: 1782612000000,
+  start: '2026-06-28T02:00:00.000Z',
+  ageH: '6.1',
+  Participant1: 'Algeria',
+  Participant2: 'Austria'
+}
+
+=== SOURCE 1: /scores/historical/{id} (raw text) ===
+status 200 len 1070111
+first 600 chars:
+ data: {"FixtureId":17588326,"GameState":"scheduled","StartTime":1782612000000,"IsTeam":true,"FixtureGroupId":10115674,"CompetitionId":72,"CountryId":466,"SportId":1,"Participant1IsHome":true,"Participant2Id":1521,"Participant1Id":1451,"CoverageSecondaryData":true,"CoverageType":"TV/Stream","Action":"connected","Id":2,"Ts":1782608841614,"ConnectionId":660,"Seq":2,"Confirmed":true,"Stats":{}}
+id: 2
+
+data: {"FixtureId":17588326,"GameState":"scheduled","StartTime":1782612000000,"IsTeam":true,"FixtureGroupId":10115674,"CompetitionId":72,"CountryId":466,"SportId":1,"Participant1IsHome":true,"Partici
+
+=== SOURCE 1b: getScoresHistorical (parsed client) ===
+count 984
+sample[0]: {"FixtureId":17588326,"GameState":"scheduled","StartTime":1782612000000,"IsTeam":true,"FixtureGroupId":10115674,"CompetitionId":72,"CountryId":466,"SportId":1,"Participant1IsHome":true,"Participant2Id":1521,"Participant1Id":1451,"CoverageSecondaryData":true,"CoverageType":"TV/Stream","Action":"connected","Id":2,"Ts":1782608841614,"ConnectionId":660,"Seq":2,"Confirmed":true,"Stats":{}}
+
+=== SOURCE 2: /scores/updates/{id} (live 5-min cache, raw text) ===
+status 200 len 1083887
+data: {"FixtureId":17588326,"GameState":"scheduled","StartTime":1782612000000,"IsTeam":true,"FixtureGroupId":10115674,"CompetitionId":72,"CountryId":466,"SportId":1,"Participant1IsHome":true,"Participant2Id":1521,"Participant1Id":1451,"CoverageSecondaryData":true,"CoverageType":"TV/Stream","Action":"connected","Id":2,"Ts":1782608841614,"ConnectionId":660,"Seq":2,"Confirmed":true,"Stats":{}}
+event:
+
+=== SOURCE 2b: getScoresLive (parsed client) ===
+count 984
+sample[0]: {"FixtureId":17588326,"GameState":"scheduled","StartTime":1782612000000,"IsTeam":true,"FixtureGroupId":10115674,"CompetitionId":72,"CountryId":466,"SportId":1,"Participant1IsHome":true,"Participant2Id":1521,"Participant1Id":1451,"CoverageSecondaryData":true,"CoverageType":"TV/Stream","Action":"connected","Id":2,"Ts":1782608841614,"ConnectionId":660,"Seq":2,"Confirmed":true,"Stats":{}}
+
+=== SOURCE 3: /scores/updates/{epochDay}/{hour}/{interval} across window ===
+intervals scanned=33  intervals with this fixture=24  matching lines=24  errors=0
+sample 0: [{"FixtureId":17588326,"GameState":"scheduled","StartTime":1782612000000,"IsTeam":true,"FixtureGroupId":10115674,"CompetitionId":72,"CountryId":466,"SportId":1,"Participant1IsHome":true,"Participant2Id":1521,"Participant1Id":1451,"CoverageSecondaryData":true,"CoverageType":"TV/Stream","Action":"play
+sample 1: [{"FixtureId":17588326,"GameState":"scheduled","StartTime":1782612000000,"IsTeam":true,"FixtureGroupId":10115674,"CompetitionId":72,"CountryId":466,"SportId":1,"Participant1IsHome":true,"Participant2Id":1521,"Participant1Id":1451,"CoverageSecondaryData":true,"CoverageType":"TV/Stream","Action":"kick
+
+=== SOURCE 3b: getScoresInterval sample (parsed client) ===
+mid-window interval 20632/3/2: total=1 forFixture=0
