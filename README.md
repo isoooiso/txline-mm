@@ -6,6 +6,14 @@ Submission for the TxODDS × Superteam Earn World Cup hackathon — *Trading Too
 
 ---
 
+## Two products, one engine
+
+- **[Market Maker](./TECHNICAL.md)** — on-chain-verifiable in-play market maker · *Trading Tools & Agents* track
+- **[AI Match Pundit](./PUNDIT.md)** — fan-facing Telegram match bot with voice · *consumer / fan* track
+
+Both run on one shared TxLINE feed layer (`FeedSource`): live and replay are interchangeable.
+The market maker is documented below; the pundit bot in [PUNDIT.md](./PUNDIT.md).
+
 ## What it is
 
 `txline-mm` is an autonomous in-play market-making agent. It treats TxLINE's **Stable Price** —
