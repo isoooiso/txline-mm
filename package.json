@@ -15,7 +15,10 @@
     "scores-probe": "tsx src/scripts/09-scores-probe.ts --",
     "shapes": "tsx src/scripts/05-shapes.ts",
     "dashboard": "npm run dev --prefix dashboard",
-    "dashboard:build": "npm run build --prefix dashboard"
+    "dashboard:build": "npm run build --prefix dashboard",
+    "pundit": "tsx src/scripts/11-pundit-replay.ts --",
+    "pundit-live": "tsx src/scripts/12-pundit-live.ts --",
+    "pundit-prewarm": "tsx src/scripts/13-pundit-prewarm.ts --"
   },
   "engines": {
     "node": ">=18"

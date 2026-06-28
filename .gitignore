@@ -19,3 +19,4 @@ dashboard/dist/
 pundit-audio/
 *.log
 EOF
+*.mp3
